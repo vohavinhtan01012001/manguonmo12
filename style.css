@@ -1,0 +1,50 @@
+.header
+{
+    height: 120px;
+    width: 100%;
+    background-image: linear-gradient(0,#fe6433,#f53e2d);
+}
+.header__navbar
+{
+    display: flex;/* ép các khối lên cùng một dòng  */
+    justify-content: space-between;/* Căn chỉnh khoảng cách 1 khối ở đầu 1 khối ở đuôi trang */
+}
+.header__navbar-list
+{
+    list-style: none;
+    padding-left: 0px;
+}
+.header__navbar-item
+{
+    margin: 0 8px;
+    position: relative;
+}
+.header__navbar-item,
+.header_navbar-item-link
+{
+    display: inline-block;/* vẫn giữ nguyên là block nhưng sẽ chuyển lên cùng một hàng với nhau */
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-weight:normal;
+}
+.header__navbar-item--strong
+{
+    font-weight: 700;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.header__navbar-item--separate::after
+{
+    content: "";
+    display: block;
+    height: 16px;
+    border-left: 1px solid #FB9086;
+    position:absolute;
+    right: -10px;
+    top: 0px;
+
+}
